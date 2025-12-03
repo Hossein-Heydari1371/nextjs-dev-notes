@@ -1,0 +1,40 @@
+.header {
+    font-size: 35px;
+    font-weight: 700px;
+}
+
+.update {
+    font-size: 11px;
+    color: gray;
+    border-bottom: 1px solid #807e7e;
+    margin-bottom: 35px;
+    margin-top: -11px;
+}
+
+.content p,
+.content li{
+    text-justify: inter-word;
+    font-size: var(--cds-font-size-title2);
+    font-family: var(--cds-font-family-source-sans-pro)
+Source Sans Pro,Arial,sans-serif
+;
+    font-weight: var(--cds-font-weight-400);
+    letter-spacing: var(--cds-letter-spacing-125);
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 30px;
+} 
+
+.content p{
+    line-height: 45px;
+}
+
+.content h2{
+    margin-top: 40px ;
+    margin-bottom: 10px;
+}
+
+
+
+

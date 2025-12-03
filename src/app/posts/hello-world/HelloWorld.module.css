@@ -1,0 +1,41 @@
+.container {
+    text-justify: inter-word;
+    font-size: var(--cds-font-size-title2);
+    font-family: var(--cds-font-family-source-sans-pro) Source Sans Pro, Arial, sans-serif;
+    font-weight: var(--cds-font-weight-400);
+    letter-spacing: var(--cds-letter-spacing-125);
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.update {
+    font-size: 11px;
+    color: gray;
+    border-bottom: 1px solid #807e7e;
+    margin-bottom: 35px;
+    margin-top: -11px;
+}
+
+.container .pseudocode{
+    background-color: #d9d6d6;
+    font-family: monospace;
+    font-size: 120%;
+    line-height: 31px;
+    height: 130px;
+}
+
+.container .output{
+    background-color: #d9d6d6;
+    font-family: monospace;
+    font-size: 120%;
+    height: 40px;
+    line-height: 35px;
+}
+
+.container .flowchart{
+    height: 40%;
+    width: 40%;;
+}
+

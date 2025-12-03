@@ -1,0 +1,300 @@
+/* posts.module.css */
+.body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.articleslist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.articleitem {
+  background: #fff;
+  border: 2px solid #e1e5e9;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  position: relative;
+}
+
+.articleitem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border-color: #3498db;
+  background: #f8fafc;
+}
+
+.articleitem a {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.pushable {
+  background: linear-gradient(135deg, #142572 0%, #764ba2 100%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  width: 170px;
+  height: 51px;
+  align-self: center;
+  margin-top: auto;
+}
+
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: translateY(-6px);
+  transition: transform 0.2s ease;
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+/* حذف پوزیشن‌های absolute ثابت */
+/* .container .hello_world button و بقیه رو پاک کن */
+
+/* ریسپانسیو */
+/* @media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .articleslist {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .articleitem {
+    padding: 1.5rem 1rem;
+    min-height: 200px;
+  }
+  
+  .articleitem a {
+    font-size: 1.3rem;
+  }
+  
+  .pushable {
+    width: 150px;
+    height: 45px;
+  }
+  
+  .front {
+    padding: 10px 35px;
+    font-size: 1.1rem;
+  }
+} */ 
+
+/* @media (max-width: 480px) {
+  .articleitem {
+    min-height: 180px;
+    padding: 1rem;
+  }
+  
+  .pushable {
+    width: 140px;
+    height: 42px;
+  }
+  
+  .front {
+    padding: 8px 30px;
+    font-size: 1rem;
+  }
+} */
+
+
+/* posts.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  direction: ltr;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.articlesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.articleCard {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+}
+
+.articleCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.colorIndicator {
+  width: 8px;
+  flex-shrink: 0;
+}
+
+.articleContent {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.articleTitle {
+  font-size: 1.4rem;
+  margin: 0 0 0.8rem 0;
+  color: #333;
+}
+
+.articleDescription {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.articleMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.level {
+  background: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.articleActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.readLink {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.readLink:hover {
+  color: #1d6fa5;
+  text-decoration: underline;
+}
+
+.readButton {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.readButton:hover {
+  background: #1d6fa5;
+}
+
+/* حذف استایل‌های قدیمی */
+.articleslist,
+.articleitem,
+.pushable,
+.front {
+  display: none;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+  .articlesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .articleCard {
+    flex-direction: column;
+  }
+  
+  .colorIndicator {
+    width: 100%;
+    height: 6px;
+  }
+  
+  .articleActions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .readLink,
+  .readButton {
+    width: 100%;
+    text-align: center;
+  }
+}
