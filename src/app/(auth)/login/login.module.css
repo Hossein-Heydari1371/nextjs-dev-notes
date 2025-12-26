@@ -1,0 +1,203 @@
+/* .loginPageContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.loginBox {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    padding: 40px 81px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    background: white;
+} */
+
+.loginPageContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+}
+
+.loginBox {
+    background: white;
+    border-radius: 16px;
+    padding: 40px 81px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease;
+}
+
+.loginBox:hover {
+    transform: translateY(-5px);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+}
+
+.inputField {
+    box-sizing: content-box;
+    color: #666;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    width: 291px;
+    height: 47px;
+    margin: 10px 0;
+    font-size: .95rem;
+}
+
+.inputField:focus {
+    border: 1px solid #007bff;
+    /* همون رنگ عادی */
+    outline: none;
+    /* بازم تایید کن */
+    box-shadow: none
+}
+
+.submitBtn {
+    width: 296px;
+    border-radius: 50px;
+    height: 38px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    color: white;
+    background: red;
+    font-size: larger;
+}
+
+.form {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* .inputIcon {
+    position: absolute;
+    left: 40%;
+    top: 73%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #666;
+    opacity: 0.7;
+    
+} */
+
+/* .lockIcon {
+    position: absolute;
+    top: 86%;
+    left: 40%;
+    color: #666;
+} */
+
+.links {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.forgotLink {
+    color: #007bff;
+    font-size: inherit;
+    font-weight: 100;
+    position: absolute;
+    right: 2px;
+}
+
+.loginBox h2 {
+    font-size: smaller;
+    font-weight: 100;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.signupLink {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.signupPage {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+
+.socialBtn {
+    display: inline-flex;
+    /* مهم: برای آیکن‌ها inline-flex بهتره */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin: 0 5px;
+    /* فاصله بین دکمه‌ها */
+}
+
+
+.facebookBtn {
+    background-color: #1877F2;
+    color: white;
+}
+
+.twitterBtn {
+    background-color: #1DA1F2;
+    color: white;
+    margin: 0 32px;
+}
+
+.googleBtn {
+    background-color: #DB4437;
+    color: white;
+}
+
+
+.socialBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ⭐⭐ مهم: استایل برای آیکن‌های SVG ⭐⭐ */
+.socialBtn svg {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+
+}
+
+/* به login.module.css اضافه کن */
+.errorMessage {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #c62828;
+    font-size: 14px;
+}
+
+.socialButtons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}

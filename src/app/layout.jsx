@@ -1,4 +1,6 @@
+// src/app/layout.jsx
 import MainLayout from "@/components/main_layout"
+import { AuthProvider } from './lib/auth-context'; // اضافه کردن AuthProvider
 import './globals.css'  
 
 export const metadata = {
@@ -11,9 +13,11 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <MainLayout>
-                    {children}
-                </MainLayout>
+                <AuthProvider> {/* اینجا AuthProvider اضافه شد */}
+                    <MainLayout>
+                        {children}
+                    </MainLayout>
+                </AuthProvider>
             </body>
         </html>
     )

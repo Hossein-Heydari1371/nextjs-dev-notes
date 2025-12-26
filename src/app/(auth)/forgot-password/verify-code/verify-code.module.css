@@ -1,0 +1,150 @@
+/* verify-code.module.css */
+
+/* .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.VerifyCodeBox {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+} */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+}
+
+.VerifyCodeBox {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease;
+}
+
+.VerifyCodeBox:hover {
+    transform: translateY(-5px);
+}
+
+.VerifyCodeBox h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.VerifyCodeBox p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: larger;
+}
+
+/* بخش کدها */
+.codeInputs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.codeInputs input {
+    width: 55px;
+    height: 65px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.codeInputs input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
+}
+
+/* دکمه‌ها */
+.verifyCodeActive {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.verifyCodeActive:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.verifyCodeDisActive {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: #ccc;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: not-allowed;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+/* بخش ارسال مجدد */
+.resendCode {
+    margin-top: 25px;
+    color: #666;
+}
+
+.resendCode ins {
+    color: #667eea;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.resendCode ins:hover {
+    text-decoration: underline;
+}
+
+/* برای موبایل */
+@media (max-width: 480px) {
+    .codeInputs input {
+        width: 45px;
+        height: 55px;
+        font-size: 22px;
+    }
+    
+    .VerifyCodeBox {
+        padding: 30px 20px;
+    }
+}
